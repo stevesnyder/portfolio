@@ -7,8 +7,90 @@
 *{
 
 }
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.3;
+}
 
 header {
-    background-color: ;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: var(--gray);
+    height: 400px;
+    width: 100%;
+}
 
+header h1 {
+    display: block;
+    color: var(--gray);
+    background-color: var(--seafoam);
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 26%;
+    height: min-content;
+    font-size: 300%;
+    padding-right: 15px;
+
+}
+
+nav {
+    float: right;
+    /*margin-right: 30px;*/
+    margin-top: 20px;
+    margin-left: 30%;
+}
+nav ul {
+    
+    display: inline-flex;
+    font-size: 175%;
+    justify-content: space-between;
+    
+}
+
+nav li {
+    
+}
+
+nav a {
+    /*background-color: unset;*/
+    color: var(--seafoam);
+    text-decoration: none;
+    border-bottom: 5px solid var(--seafoam);
+    padding: 10px;
+    margin: 5px;
+
+}
+
+figure {
+    /*link background image*/
+
+}
+
+main section {
+    width: 100%
+    float: left;
+}
+
+aside {
+    display: block;
+    color: var(--darkblue);
+    width: 20%;
+    font-size: 300%;
+    float:left;
+    border-right: 5px solid var(--darkblue);
+    padding-right: 20px;
+    
+}
+
+aside h1 {
+    text-align: right;
+}
+article, #bio {
+    width: 80%;
+    height: min-content;
+    float: left;
+    padding-left: 40px;
 }
